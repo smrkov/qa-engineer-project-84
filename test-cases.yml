@@ -100,17 +100,15 @@
 - summary: |
     Сайт должен быть безопасным и защищать данные пользователя
   requirement: |
-    Вводимая информация должна корректно сохраняться в базе данных
+    Сайт должен быть защищен протоколом HTTPS
   prerequisites: |
     Открыта главная страница
   test-data: |
-    Выбор товара = Samsung Galaxy Book
+    Тестовые данные отсутствуют
   steps: |
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
-    - Выбираем товар в корзину
-    - Переходим в корзину
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
   expected-result: |
-    Содержимое отображается в корзине
+    В URL указан протокол HTTPS
 
 - summary: |
     Сайт должен иметь мобильную версию
@@ -127,7 +125,7 @@
     - Зайти на сайт https://hexlet-products-store.vercel.app/ с устройства Iphone 11
     - Зайти на сайт https://hexlet-products-store.vercel.app/ с устройства Samsung Galaxy S22
   expected-result: |
-    Сайт отображается корректно
+    Адаптивная верстка отображается корректно на разных устройствах
 
 - summary: |
     Сайт должен быть протестирован на совместимость с последними версиями браузеров
@@ -146,4 +144,4 @@
     - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Yandex
     - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Chrome
   expected-result: |
-    Сайт отображается корректно
+    В разных браузерах сайт отображается как написано в требованиях
