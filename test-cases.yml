@@ -3,13 +3,13 @@
     Пользователь должен иметь возможность искать товары по ключевому слову
   requirement: |
     При введении в форму поиска название товара должен отобразиться список товаров по ключевому слову
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Ключевое слово = Dermive
-  steps:
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
-    - Вводим в форме поиска название товара
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
+    - Ввести в форме поиска название товара
   expected-result: |
     Пользователю должен отобразиться список товаров по ключевому слову
     
@@ -17,13 +17,13 @@
     Пользователь должен иметь возможность искать товары по категориям
   requirement: |
     При выборе категории товар должен отобразиться 
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Категория = Smartphones
-  steps:
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
-    - Выбираем категорию товара
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
+    - Выбрать категорию товара
   expected-result: |
     Должен отобразиться список товаров по выбранной категории
 
@@ -31,13 +31,13 @@
     Пользователь должен иметь возможность фильтровать товары
   requirement: |
     При выборе фильтра товара должен отобразиться список из выбранного фильтра
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Фильтр = Apple
-  steps:
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
-    - Выбираем в фильтре товар или бренд
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
+    - Выбрать в фильтре товар или бренд
   expected-result: |
     Пользователю должен отобразиться список товаров выбранный в фильтре
 
@@ -45,26 +45,26 @@
     Пользователь должен иметь возможность просматривать товары
   requirement: |
     На главной странице сайта отображается товар
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Тестовые данный отсутствуют
-  steps:
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
   expected-result: |
-    Видим список товаров которые можно просматривать
+    Отображается список товаров которые можно просматривать
 
 - summary: |
     Пользователь должен иметь возможность просматривать подробную информацию о товаре
   requirement: |
     При выборе любого товара отображается подробная информация о нем
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Выбор товара = Samsung Galaxy Book
-  steps:
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
-    - Выбираем любой товар
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
+    - Выбрать любой товар
   expected-result: |
     Отображается информация о выбраном товаре
 
@@ -72,13 +72,13 @@
     Пользователь должен иметь возможность добавлять товары в корзину
   requirement: |
     При добавлении в корзину товар в ней отображается 
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Выбор товара = Samsung Galaxy Book
-  steps:
-    - Заходим на сайт https://hexlet-products-store.vercel.app/
-    - Выбираем товар в корзину
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
+    - Выбрать товар в корзину
   expected-result: |
     Товар отображается в корзине
 
@@ -86,13 +86,64 @@
     Пользователь должен иметь возможность просматривать содержимое корзины
   requirement: |
     При добавлении товара в корзину можно просматривать ее содержимое
-  prerequisites:
+  prerequisites: |
     Открыта главная страница
   test-data: |
     Выбор товара = Samsung Galaxy Book
-  steps:
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/
+    - Выбрать товар в корзину
+    - Перейти в корзину
+  expected-result: |
+    Содержимое отображается в корзине
+
+- summary: |
+    Сайт должен быть безопасным и защищать данные пользователя
+  requirement: |
+    Вводимая информация должна корректно сохраняться в базе данных
+  prerequisites: |
+    Открыта главная страница
+  test-data: |
+    Выбор товара = Samsung Galaxy Book
+  steps: |
     - Заходим на сайт https://hexlet-products-store.vercel.app/
     - Выбираем товар в корзину
     - Переходим в корзину
   expected-result: |
     Содержимое отображается в корзине
+
+- summary: |
+    Сайт должен иметь мобильную версию
+  requirement: |
+    При заходе с мобильного телефона сайт должен корректно отображаться в мобильной версии браузера на разных операционных системах
+  prerequisites: |
+    Открыта главная страница на мобильном устройстве
+  test-data: |
+    Вид устройства = Iphone 11
+    Операционная система = Ios
+    Вид устройства = Samsung Galaxy S22
+    Операционная система = Android
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/ с устройства Iphone 11
+    - Зайти на сайт https://hexlet-products-store.vercel.app/ с устройства Samsung Galaxy S22
+  expected-result: |
+    Сайт отображается корректно
+
+- summary: |
+    Сайт должен быть протестирован на совместимость с последними версиями браузеров
+  requirement: |
+    В разных браузерах сайт отображается корректно
+  prerequisites: |
+    Открыта главная страница в разных браузерах
+  test-data: |
+    Браузер = Opera версия не ниже 101.0.4843.58
+    Браузер = Firefox версия не ниже 116.0.3
+    Браузер = Yandex версия не ниже 23.7.3.823
+    Браузер = Chrome версия не ниже 116.0.5845.111
+  steps: |
+    - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Opera
+    - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Firefox
+    - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Yandex
+    - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Chrome
+  expected-result: |
+    Сайт отображается корректно
