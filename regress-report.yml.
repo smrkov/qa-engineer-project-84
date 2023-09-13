@@ -11,16 +11,16 @@ test-cases:
 bugreports:
   - summary: |
       Не работает форма поиска по ключевому слову в некоторых категориях
-  environment: |
+    environment: |
       Google Chrome	116.0.5845.111 (Официальная сборка) (64 бит)
       ОС Windows 11
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Зайти на сайт https://hexlet-products-store.vercel.app/
       2. Нажать форму "поиск"
       3. Ввести ключевое слово "Dermive"
-  expected-result: |
+    expected-result: |
       Пользователю должен отобразиться список товаров по ключевому слову
-  actual-result: |
+    actual-result: |
       На странице выводится надпись "ничего не найдено"
 
 test-cases:
@@ -46,13 +46,13 @@ test-cases:
 bugreports:
   - summary: |
       Не все категории выводятся при выборе фильтров
-  environment: |
+    environment: |
       Google Chrome	116.0.5845.111 (Официальная сборка) (64 бит)
       ОС Windows 11
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       1. Зайти на сайт https://hexlet-products-store.vercel.app/
       2. Выбрать несколько произвольных категорий в фильтре
-  expected-result: |
+    expected-result: |
       Пользователю должен отобразиться список товаров выбранных в фильтре
-  actual-result: |
+    actual-result: |
       На странице отображаются не все выбранные категории 
