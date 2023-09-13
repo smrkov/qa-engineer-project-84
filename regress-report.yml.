@@ -34,7 +34,7 @@ test-cases:
 
 bugreports: []
 
-  test-cases:
+test-cases:
   - summary: |
       Пользователь должен иметь возможность фильтровать товары
     status: pass
