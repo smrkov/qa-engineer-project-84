@@ -1,0 +1,40 @@
+---
+- summary: |
+    Не работает форма поиска по ключевому слову в некоторых категориях
+  environment: |
+    Google Chrome	116.0.5845.111 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти на сайт https://hexlet-products-store.vercel.app/
+    2. Нажать форму "поиск"
+    3. Ввести ключевое слово "Dermive"
+  expected-result: |
+    Пользователю должен отобразиться список товаров по ключевому слову
+  actual-result: |
+    На странице выводится надпись "ничего не найдено"
+
+- summary: |
+    Сайт не доступен на мобильных устройствах
+  environment: |
+    Devace Iphone 11
+    ОС Ios
+  steps-to-reproduce: |
+    1. Зайти на сайт https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт должен открыться в браузере мобильного устройства
+  actual-result: |
+    Сайт не открывается
+
+  - summary: |
+    Нет возможности вернуться на главную страницу при выборе нескольких категорий товара
+  environment: |
+    Yandex 23.7.3.823 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти на сайт https://hexlet-products-store.vercel.app/
+    2. Выбрать несколько любых категорий товара
+    3. Нажать кнопку "Мазагин"
+  expected-result: |
+    Должна открыться главная страница
+  actual-result: |
+    На странице ничего не происходит
