@@ -8,8 +8,6 @@ test-cases:
       Пользователь должен иметь возможность искать товары по ключевому слову
     status: fail
 
-bugreports: []
-
 ---
 test-cases:
   - summary: |
@@ -20,7 +18,6 @@ test-cases:
       Пользователь должен иметь возможность искать товары по категориям
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -41,7 +38,6 @@ test-cases:
       Пользователь должен иметь возможность просматривать подробную информацию о товаре
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -52,7 +48,6 @@ test-cases:
       Пользователь должен иметь возможность добавлять товары в корзину
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -63,7 +58,6 @@ test-cases:
       Пользователь должен иметь возможность просматривать содержимое корзины
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -74,7 +68,6 @@ test-cases:
       Сайт должен быть безопасным и защищать данные пользователя
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -85,7 +78,6 @@ test-cases:
       Сайт должен быть доступен на различных устройствах
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -96,7 +88,6 @@ test-cases:
       Сайт должен быть протестирован на совместимость с последними версиями браузеров
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -107,7 +98,6 @@ test-cases:
       Сайт мультиязычный (должен поддерживать 2 языка, Русский и Английский)
     status: pass
 
-bugreports: []
 ---
 test-cases:
   - summary: |
@@ -128,8 +118,6 @@ test-cases:
       При добавлении товара в корзину можно выбрать количество
     status: fail
 
-bugreports: []
-
 ---
 test-cases:
   - summary: |
@@ -139,8 +127,6 @@ test-cases:
   - summary: |
       При оформлении товара должно появляться окно с подтверждением заказа
     status: fail
-
-bugreports: []
 
 bugreports:
   - summary: |
