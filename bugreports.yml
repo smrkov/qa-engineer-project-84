@@ -41,3 +41,16 @@
     Заказ должен оформиться и данные отправиться на сервер
   actual-result: |
     данные не отправляются, ошибка GET https://dummyjson.com/http/500/failed 500 
+
+- summary: |
+    Не отображается флаг английского языка
+  environment: |
+    Yandex 23.7.3.823 (Официальная сборка) (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Зайти на сайт https://hexlet-products-store.vercel.app/
+    2. Нажать кнопку "Язык"
+  expected-result: |
+    Отображается флаг выбранного языка
+  actual-result: |
+    Не отображается флаг языка "English" 
