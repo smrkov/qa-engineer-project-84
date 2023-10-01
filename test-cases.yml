@@ -7,7 +7,7 @@
     Открыта главная страница
   test-data: |
     Ключевое слово = Dermive
-  steps: |
+  steps:
     - Ввести в форме поиска название товара
   expected-result: |
     Пользователю должен отобразиться список товаров по ключевому слову
@@ -20,7 +20,7 @@
     Открыта главная страница
   test-data: |
     Категория = Smartphones
-  steps: |
+  steps:
     - Выбрать категорию товара
   expected-result: |
     Должен отобразиться список товаров из выбранной категории
@@ -33,7 +33,7 @@
     Открыта главная страница
   test-data: |
     Фильтр = Apple
-  steps: |
+  steps:
     - Выбрать в фильтре товар или бренд
   expected-result: |
     Пользователю должен отобразиться список товаров выбранный в фильтре
@@ -46,7 +46,7 @@
     Открыта главная страница
   test-data: |
     Выбор товара = Samsung Galaxy Book
-  steps: |
+  steps:
     - Выбрать любой товар
   expected-result: |
     Отображается информация о выбраном товаре
@@ -59,7 +59,7 @@
     Открыта главная страница
   test-data: |
     Выбор товара = Samsung Galaxy Book
-  steps: |
+  steps:
     - Выбрать товар в корзину
     - Перейти в корзину
   expected-result: |
@@ -73,7 +73,7 @@
     Открыта главная страница
   test-data: |
     Выбор товара = Samsung Galaxy Book
-  steps: |
+  steps:
     - Выбрать товар в корзину
     - Перейти в корзину
   expected-result: |
@@ -87,7 +87,7 @@
     Открыта главная страница
   test-data: |
     Тестовые данные отсутствуют
-  steps: |
+  steps:
   expected-result: |
     В URL указан протокол HTTPS
 
@@ -102,7 +102,7 @@
     Операционная система = Ios
     Вид устройства = Samsung Galaxy S22
     Операционная система = Android
-  steps: |
+  steps:
     - Зайти на сайт https://hexlet-products-store.vercel.app/ с устройства Iphone 11
     - Зайти на сайт https://hexlet-products-store.vercel.app/ с устройства Samsung Galaxy S22
   expected-result: |
@@ -119,7 +119,7 @@
     Браузер = Firefox версия не ниже 116.0.3
     Браузер = Yandex версия не ниже 23.7.3.823
     Браузер = Chrome версия не ниже 116.0.5845.111
-  steps: |
+  steps:
     - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Opera
     - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Firefox
     - Зайти на сайт https://hexlet-products-store.vercel.app/ через браузер Yandex
@@ -135,7 +135,7 @@
     Открыта главная страница
   test-data: |
     Тестовые данные отсутствуют
-  steps: |
+  steps:
     - Выбрать Английский язык
     - Выбрать Русский язык
   expected-result: |
@@ -149,7 +149,7 @@
     Открыта главная страница
   test-data: |
     Тестовые данные отсутствуют
-  steps: |
+  steps:
     - Выбрать несколько категорий
     - Нажать кнопку "Магазин"
   expected-result: |
@@ -163,7 +163,7 @@
     Открыта главная страница
   test-data: |
     Тестовые данные отсутствуют
-  steps: |
+  steps:
     - Выбрать товар
     - Добавить в корзину
     - Перейти в корзину
