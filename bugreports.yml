@@ -21,7 +21,7 @@
   steps-to-reproduce: |
     1. Зайти на сайт https://hexlet-products-store.vercel.app/
     2. Выбрать несколько любых категорий товара
-    3. Нажать кнопку "Мазагин"
+    3. Нажать кнопку "Магазин"
   expected-result: |
     Должна открыться главная страница
   actual-result: |
